@@ -13,7 +13,7 @@ spec:
         app: abcdef-app
     spec:
       containers:
-        - image: y2o2u2n/abcdef-app:latest
+        - image: y2o2u2n/abcdef
           name: spring-boot
           ports:
             - containerPort: 8080
