@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: abcdef-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: abcdef-app
+  template:
+    metadata:
+      labels:
+        app: abcdef-app
+    spec:
+      containers:
+        - image: y2o2u2n/abcdef-app:latest
+          name: spring-boot
+          ports:
+            - containerPort: 8080
